@@ -15,6 +15,8 @@ Pendekatan yang digunakan melibatkan pengolahan data fisik dan kimia jeruk, sepe
 
 Proyek ini dirancang untuk mendukung pengambilan keputusan yang lebih baik dan meningkatkan daya saing produsen jeruk di pasar lokal maupun internasional.
 
+website untuk prediksi bisa diakses disini: https://prediksi-kualitas-jeruk-vvwfvtlvmdtvr8rf3jixst.streamlit.app/
+
 ## Content
     .
     ├── README.md 
