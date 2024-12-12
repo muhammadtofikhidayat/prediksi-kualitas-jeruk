@@ -16,9 +16,9 @@ size = st.sidebar.number_input("Size", min_value=0.0, step=0.01)
 weight = st.sidebar.number_input("Weight", min_value=0, step=10)
 brix = st.sidebar.number_input("Brix", min_value=0.0, step=0.01)
 ph = st.sidebar.number_input("Ph", min_value=0.0, step=0.01)
-softness = st.sidebar.number_input("Softness", min_value=0, step=1, max_value=5)
+softness = st.sidebar.number_input("Softness", min_value=1, step=1, max_value=5)
 harvest_time = st.sidebar.number_input("Harvest Time", min_value=0, step=1)
-ripeness = st.sidebar.number_input("Ripeness", min_value=0, step=0.01, max_value=5)
+ripeness = st.sidebar.number_input("Ripeness", min_value=1, step=1, max_value=5)
 
 # Dropdown untuk input color, variety, dan blemishes
 color = st.sidebar.selectbox(
