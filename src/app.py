@@ -12,13 +12,13 @@ st.title("Prediksi Kualitas Jeruk")
 
 # Form input menggunakan Streamlit
 st.sidebar.header("Masukkan Data Jeruk")
-size = st.sidebar.number_input("Size", min_value=0.0, step=0.01)
-weight = st.sidebar.number_input("Weight", min_value=0, step=10)
-brix = st.sidebar.number_input("Brix", min_value=0.0, step=0.01)
-ph = st.sidebar.number_input("Ph", min_value=0.0, step=0.01)
-softness = st.sidebar.number_input("Softness", min_value=1, step=1, max_value=5)
-harvest_time = st.sidebar.number_input("Harvest Time", min_value=0, step=1)
-ripeness = st.sidebar.number_input("Ripeness", min_value=1, step=1, max_value=5)
+size = st.sidebar.number_input("Size(cm)", min_value=0.0, step=0.01)
+weight = st.sidebar.number_input("Weight(g)", min_value=0, step=10)
+brix = st.sidebar.number_input("Brix(Sweetness)", min_value=0.0, step=0.01)
+ph = st.sidebar.number_input("Ph(Acidity)", min_value=0.0, step=0.01)
+softness = st.sidebar.number_input("Softness(1-5)", min_value=1, step=1, max_value=5)
+harvest_time = st.sidebar.number_input("Harvest Time(days)", min_value=0, step=1)
+ripeness = st.sidebar.number_input("Ripeness(1-5)", min_value=1, step=1, max_value=5)
 
 # Dropdown untuk input color, variety, dan blemishes
 color = st.sidebar.selectbox(
