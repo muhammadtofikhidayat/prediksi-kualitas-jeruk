@@ -13,12 +13,12 @@ st.title("Prediksi Kualitas Jeruk")
 # Form input menggunakan Streamlit
 st.sidebar.header("Masukkan Data Jeruk")
 size = st.sidebar.number_input("Size", min_value=0.0, step=0.01)
-weight = st.sidebar.number_input("Weight", min_value=0.0, step=0.01)
+weight = st.sidebar.number_input("Weight", min_value=0, step=10)
 brix = st.sidebar.number_input("Brix", min_value=0.0, step=0.01)
 ph = st.sidebar.number_input("Ph", min_value=0.0, step=0.01)
-softness = st.sidebar.number_input("Softness", min_value=0.0, step=0.01)
+softness = st.sidebar.number_input("Softness", min_value=0, step=1, max_value=5)
 harvest_time = st.sidebar.number_input("Harvest Time", min_value=0, step=1)
-ripeness = st.sidebar.number_input("Ripeness", min_value=0.0, step=0.01)
+ripeness = st.sidebar.number_input("Ripeness", min_value=0, step=0.01, max_value=5)
 
 # Dropdown untuk input color, variety, dan blemishes
 color = st.sidebar.selectbox(
@@ -69,7 +69,7 @@ if st.sidebar.button("Prediksi"):
     try:
         prediction = model.predict(input_data)
         result = round(prediction[0], 2)
-        st.success(f"Prediksi Kualitas Jeruk: ⭐{result}")
+        st.success(f"Prediksi Kualitas Jeruk: ⭐ {result}")
     except Exception as e:
         st.error(f"Error: {str(e)}")
 else:
