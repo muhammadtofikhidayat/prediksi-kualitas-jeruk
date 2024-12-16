@@ -29,23 +29,17 @@ color = st.sidebar.selectbox(
 variety = st.sidebar.selectbox(
     "Variety",
     options=[
-        'Valencia', 'Navel', 'Cara Cara', 'Blood Orange', 'Hamlin',
-        'Tangelo (Hybrid)', 'Murcott (Hybrid)', 'Moro (Blood)', 'Jaffa',
-        'Clementine', 'Washington Navel', 'Star Ruby', 'Tangerine',
-        'Ambiance', 'California Valencia', 'Honey Tangerine',
-        'Navel (Late Season)', 'Clementine (Seedless)', 'Temple',
-        'Minneola (Hybrid)', 'Satsuma Mandarin', 'Midsweet (Hybrid)',
-        'Navel (Early Season)', 'Ortanique (Hybrid)'
+        'Valencia', 'Navel', 'Cara Cara', 'Other', 'Moro (Blood)', 'Jaffa',
+       'Clementine', 'Washington Navel', 'Star Ruby', 'Tangerine',
+       'Ambiance', 'Temple', 'Minneola (Hybrid)', 'Satsuma Mandarin',
+       'Ortanique (Hybrid)'
     ]
 )
 
 blemishes = st.sidebar.selectbox(
     "Blemishes",
     options=[
-        'N', 'Y (Minor)', 'Y (Sunburn)', 'Y (Mold Spot)', 'Y (Bruise)',
-        'Y (Split Skin)', 'Y (Sunburn Patch)', 'Y (Scars)',
-        'Y (Minor Insect Damage)', 'Y (Bruising)', 'N (Minor)',
-        'N (Split Skin)'
+        'N', 'Y'
     ]
 )
 
